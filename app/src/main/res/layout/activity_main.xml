@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.symverse.symwallet.sdk.sample.MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSend"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:text="Send"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/btnPaid"
+                app:layout_constraintVertical_chainStyle="packed"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPaid"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:text="Paid"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSend"
+                app:layout_constraintBottom_toTopOf="@+id/btnSignIn"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPaid"
+                app:layout_constraintBottom_toTopOf="@+id/btnSignData"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignData"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:text="Sign Data"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
+                app:layout_constraintBottom_toTopOf="@+id/btnVerifyingSign"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnVerifyingSign"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:text="Verifying Sign"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSignData"
+                app:layout_constraintBottom_toTopOf="@+id/btnListKeyStore"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnListKeyStore"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:text="List KeyStore"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnVerifyingSign"
+                app:layout_constraintBottom_toTopOf="@+id/btnExportKey"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnExportKey"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:text="Export Key"
+                android:textAllCaps="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnListKeyStore"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
